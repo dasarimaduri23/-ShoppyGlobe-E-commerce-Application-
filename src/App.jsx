@@ -1,12 +1,18 @@
+import Footer from "./components/Footer"
 import Header from "./components/Header"
+import Homepage from "./pages/Homepage"
+import { Provider } from "react-redux"
+import productsStore from "./utils/store/productsStore";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  
-
   return (
     <>
-      <h1>App</h1>
-      <Header/>
+      <Provider store={productsStore}>
+        <Header />
+        <Outlet />
+        <Footer />
+      </Provider>
     </>
   )
 }
