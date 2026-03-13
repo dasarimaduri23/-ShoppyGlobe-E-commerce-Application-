@@ -1,14 +1,16 @@
 import logo from "../assets/logo.png";
+
 function Footer() {
     return (
-        <footer className="mt-7 bg-regal-blue py-3 px-10 rounded-t-3xl">
-            <figure>
-                <img className="w-36" src={logo} />
-            </figure>
+        <footer className="mt-7 bg-blue-500 py-4 px-6 rounded-t-3xl flex items-center justify-between">
+            
+           <img className="w-36 h-20" src={logo} alt="logo" />
+           <p className="text-black font-semibold text-md">
+                Dasari Maduri
+            </p>
+           <p className="text-black font-semibold text-md">Made with ❤️ @ 2026 </p>
+            
 
-            <article className="mt-5 min-[630px]:mt-0 flex flex-col items-center">
-                <p className="text-white font-semibold text-center text-sm min-[400px]:text-base min-[630px]:text-md">Copyright Reserved - Mayank M Jain</p>
-            </article>
         </footer>
     )
 }

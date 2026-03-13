@@ -52,7 +52,7 @@ function CartItem({ data }) {
     }
 
     return (
-        <article className="flex flex-col min-[500px]:flex-row gap-x-5 shadow-lg max-w-[700px] rounded-lg">
+        <article className="flex flex-col min-[500px]:flex-row gap-x-5 shadow-lg max-w-[500px] rounded-lg">
             <figure>
                 <img src={data?.thumbnail} className="w-52 min-[500px]:w-36 object-cover" />
             </figure>
@@ -71,21 +71,21 @@ function CartItem({ data }) {
                 </p>
                 <button
                     onClick={removeCartItem}
-                    className="mt-3 font-semibold text-[17px] bg-purple-700 text-white py-1 px-3 rounded-sm"
+                    className="mt-3 font-semibold text-[17px] bg-sky-500 text-white py-1 px-3 rounded-sm"
                 >
                     <FontAwesomeIcon icon={faTrash} /> Remove
                 </button>
             </article>
 
             <article className="min-[500px]:ml-auto mr-5 mt-4 flex flex-row min-[500px]:flex-col gap-x-3 min-[500px]:gap-y-1">
-                <button onClick={incrementQuantity}><FontAwesomeIcon icon={faPlus} className="bg-purple-700 text-white rounded-md w-[60px] py-[8px]" /></button>
+                <button onClick={incrementQuantity}><FontAwesomeIcon icon={faPlus} className="bg-sky-500 text-white rounded-md w-[60px] py-[8px]" /></button>
                 <input
                     type="number"
                     value={data.quantity}
                     readOnly
-                    className="ps-1 text-center rounded-md w-[60px] outline-none border-2 border-purple-700"
+                    className="ps-1 text-center rounded-md w-[60px] outline-none border-2 border-sky-500"
                 />
-                <button onClick={decrementQuantity}><FontAwesomeIcon icon={faMinus} className="bg-purple-700 text-white rounded-md w-[60px] py-[8px] mt-1" /></button>
+                <button onClick={decrementQuantity}><FontAwesomeIcon icon={faMinus} className="bg-sky-500 text-white rounded-md w-[60px] py-[8px] mt-1" /></button>
             </article>
         </article>
     )

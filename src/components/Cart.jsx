@@ -13,7 +13,7 @@ function Cart() {
     return (
         <section className="mt-20 min-[500px]:mt-28 px-5">
             <article className="relative">
-                <h1 className="text-3xl min-[500px]:text-4xl font-bold after:absolute after:w-12 after:h-[6px] after:rounded-lg after:bg-purple-700 after:-bottom-2 after:left-0">Cart</h1>
+                <h1 className="text-3xl min-[500px]:text-4xl font-bold after:absolute after:w-12 after:h-[6px] after:rounded-lg after:bg-sky-500 after:-bottom-2 after:left-0">Cart</h1>
             </article>
             {
                 cartItems.length ?
@@ -42,7 +42,7 @@ function Cart() {
                                     <p><FontAwesomeIcon icon={faIndianRupee} /> {grandTotalAmount}</p>
                                 </article>
                             </section>
-                            <Link to="/checkout"><button className="mt-3 py-1 px-3 text-lg rounded-md bg-purple-700 text-white">Proceed to Payment</button></Link>
+                            <Link to="/checkout"><button className="mt-3 py-1 px-3 text-lg rounded-md bg-sky-500 text-white">Proceed to Payment</button></Link>
                         </section>
                     </section>
                     :
@@ -54,7 +54,7 @@ function Cart() {
                         />
                         <h1 className="mt-5 text-xl min-[400px]:text-2xl font-semibold">Cart is Empty !</h1>
                         <Link to="/">
-                            <button className="bg-purple-700 text-white py-2 px-4 rounded-md mt-10 text-lg min-[400px]:text-xl font-semibold">Continue Shopping</button>
+                            <button className="bg-sky-500 text-white py-2 px-4 rounded-md mt-10 text-lg min-[400px]:text-xl font-semibold">Continue Shopping</button>
                         </Link>
                     </section>
             }

@@ -37,7 +37,7 @@ function ProductItem({ data }) {
     }
 
     return (
-        <article className="hover:border-2 hover:border-purple-700 border-white border-2 shadow-xl shadow-slate-400 rounded-md px-4 pt-2 pb-4">
+        <article className="hover:border-2 hover:border-sky-500 border-white border-2 shadow-xl shadow-slate-400 rounded-md px-4 pt-2 pb-4">
             <figure title="Click on title to view more details" className="flex justify-center">
                 <Link to={`/product-details/${data?.id}`}>
                     <img className="w-[250px]" src={data?.thumbnail} alt="Product" />
@@ -62,14 +62,14 @@ function ProductItem({ data }) {
                     !itemAddedToCart ?
                         <button
                             onClick={handleAddToCart}
-                            className="mt-5 font-semibold bg-purple-700 text-white px-5 py-[7px] rounded-md"
+                            className="mt-5 font-semibold bg-sky-500 text-white px-5 py-[7px] rounded-md"
                         >
                             Add to Cart
                         </button>
                         :
                         <button
                             disabled
-                            className="mt-5 font-semibold opacity-60 cursor-not-allowed bg-purple-700 text-white px-5 py-[7px] rounded-md"
+                            className="mt-5 font-semibold opacity-60 cursor-not-allowed bg-sky-500 text-white px-5 py-[7px] rounded-md"
                         >
                             Added to Cart
                         </button>

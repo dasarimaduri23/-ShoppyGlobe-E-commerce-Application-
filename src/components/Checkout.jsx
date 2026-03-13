@@ -36,7 +36,7 @@ function Checkout() {
         <>
             <section className="mt-20 min-[500px]:mt-28 px-5 min-h-[396px]">
                 <article className="relative">
-                    <h1 className="text-3xl min-[500px]:text-4xl font-bold after:absolute after:w-28 after:h-[6px] after:rounded-lg after:bg-purple-700 after:-bottom-2 after:left-0">Checkout</h1>
+                    <h1 className="text-3xl min-[500px]:text-4xl font-bold after:absolute after:w-28 after:h-[6px] after:rounded-lg after:bg-sky-500 after:-bottom-2 after:left-0">Checkout</h1>
                 </article>
                 <section className="mt-10 flex flex-col items-center relative">
                     <section className="shadow-lg py-6 px-5 rounded-xl bg-slate-100">
@@ -47,9 +47,9 @@ function Checkout() {
                         <article className="mt-5">
                             <p className="text-[13px] min-[400px]:text-[15px] min-[600px]:text-[17px] font-semibold">Delivered At</p>
                             <p className="text-[16px] min-[400px]:text-[17px] min-[600px]:text-xl font-semibold rounded-lg bg-white py-1 ps-2 pe-2 shadow-lg">Flat No. 12, Shanti Apartment
-                                Plot No. 5, Linking Road
-                                Bandra West
-                                Mumbai, Maharashtra 400050
+                                Plot No. 5, Jubliee Hills
+                                
+                                Hyderabad, Telangana 500070
                                 India
                             </p>
                         </article>
@@ -58,9 +58,9 @@ function Checkout() {
                             <p className="text-[16px] min-[400px]:text-[17px] min-[600px]:text-xl font-semibold rounded-lg bg-white py-1 ps-2 pe-2 shadow-lg"> <FontAwesomeIcon icon={faIndianRupee} /> {grandTotal}</p>
                         </article>
                         <article className="mt-5">
-                            <p className="text-[13px] min-[400px]:text-[15px] min-[600px]:text-[17px] font-semibold">How would you like to pay</p>
-                            <button onClick={(e) => placeOrder("upi")} className="text-[14px] min-[600px]:text-base mt-2 bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg mr-3">UPI</button>
-                            <button onClick={(e) => placeOrder("cash")} className="text-[14px] min-[600px]:text-base bg-purple-700 text-white font-semibold py-2 px-4 rounded-lg mr-3">Cash on Delivery</button>
+                            <p className="text-[13px] min-[400px]:text-[15px] min-[600px]:text-[17px] font-semibold">Payment Type:</p>
+                            <button onClick={(e) => placeOrder("upi")} className="text-[14px] min-[600px]:text-base mt-2 bg-sky-500 text-white font-semibold py-2 px-4 rounded-lg mr-3">UPI</button>
+                            <button onClick={(e) => placeOrder("cash")} className="text-[14px] min-[600px]:text-base bg-sky-500 text-white font-semibold py-2 px-4 rounded-lg mr-3">Cash on Delivery</button>
                         </article>
                     </section>
                 </section>
